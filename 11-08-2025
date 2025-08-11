@@ -1,0 +1,21 @@
+                                                                                      Questions
+
+1. Write a function that takes two matrices as inputs and returns their product. Handle cases where multiplication is not possible.
+
+2. Create a function to merge two sorted arrrays into a single sorted array.
+
+3. Write a recursive function to find the sum of digits of an integer.
+
+4. Implement a function that uses pointers to reverse the contents of an integer array in place.
+
+5. Write a function that accepts a string and returns the count of vowels and consonents separately.
+
+6. Create a functioon that performs binary search on a sorted array and reurns the index of the searched element or -1 if not found.
+
+7. Write a function that removes all duplicate element from an integer array and returns the new length of the array.
+
+8. Implement a function to check if a string is a palindrome , ignoring case and non alphanumeric characters.
+
+9. Write a function that calculates the roots of a quadratic equation andreturns them via pointer arguments.
+
+10. Create a function that accepts a variable number of integer arguments(using stdarg.h) and returns their average
