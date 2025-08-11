@@ -18,4 +18,14 @@
 
 9. Write a function that calculates the roots of a quadratic equation andreturns them via pointer arguments.
 
-10. Create a function that accepts a variable number of integer arguments(using stdarg.h) and returns their average
+10. Create a function that accepts a variable number of integer arguments(using stdarg.h) and returns their average.
+
+11. Student Records Management: Create a structure named Student with fields: roll_no,name, and marks. Write a program to:
+     Read details of n students.
+     Display all employee records.
+     Write a function to find the student with the highest marks.
+
+12. Emplouyee Salary calculator: Definne a structure Employee with fields: id, name, salary and department. Write a program that:
+       Takes input for n employees.
+       Displays all employee records.
+       Uses a function to calculate and return the average salary.
