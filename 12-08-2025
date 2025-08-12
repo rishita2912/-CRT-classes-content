@@ -253,5 +253,15 @@ int main() {
 }
 */
 
+Problem 1: Longest Uniform Substring after Limited Changes: You are given a string s consisting of uppercase or lowercase english letters, and an integer k. 
+You are allowed to change at most k characters in the string to any other character(you may change a character muktiple tims if within the limit). Your tak is to determine
+the maximum possible length of a substring in which all characters are the same, after making the allowed modifications.
+Objective: Find the length of the longest possible uniform substring after at most k character changes.
+Input format:
+A string of length n
+A inteer k(0<=k<=n)
+Output Format:
+A single integer denoting the maximum kength if the uniform substrin acievable.
+
 
 
