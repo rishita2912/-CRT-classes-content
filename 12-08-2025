@@ -1,0 +1,21 @@
+String Problems
+
+1. Write a program that reads string from the user and prints the length of the string.
+
+2. Read two strings from the user and concatenate them into one. Print the resultnt string.
+
+3. Take the input and copy its contents into another string variable. Display the copied string.
+
+4. Ask the user to input two strings. Compare them and print whether they are equal or not.
+
+5. Take a string input and print each character of the string along with its corresponding index.
+
+6. Ask the user to input a string and two indices(start and end). Extract and display the substring between those indices.
+
+7. Write a program that converts all characters of a string to uppercase and prints the result.
+
+8. Write a program that converts all characters of a string to lowercase and prints the result.
+
+9. Input a string and a substring from the user. ind the position of the substring in the main string. If it exists, print its index, otherwise, print a message saying it was not found.
+
+10. Replace all occurences of a specific character or substring in a given string with nother character or substring. Print the modified string.
