@@ -19,3 +19,239 @@ String Problems
 9. Input a string and a substring from the user. Find the position of the substring in the main string. If it exists, print its index, otherwise, print a message saying it was not found.
 
 10. Replace all occurences of a specific character or substring in a given string with nother character or substring. Print the modified string.
+
+Codes:
+
+/*
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s[] = "Rishita";
+    
+    printf("%lu", strlen(s));
+    return 0;
+}*/
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s1[30];  
+    char s2[15];
+
+    printf("Enter the first string: ");
+    scanf("%29s", s1); 
+
+    printf("Enter the second string: ");
+    scanf("%14s", s2); 
+
+    strcat(s1, s2);
+
+    printf("Concatenated string: %s\n", s1);
+
+    return 0;
+}*/
+
+/*
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char source[10];
+    printf("Enter the source string");
+    scanf("%23s", source);
+    char dest[20];
+     
+    strcpy(dest, source);
+    printf("%s", dest);
+    return 0;
+    
+}
+*/
+/*
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s1[12];
+    char s2[15];
+    
+    printf("Enter the first string");
+    scanf("%20s", s1);
+    
+    printf("Enter the second string");
+    scanf("%20s", s2);
+    
+    int res = strcmp(s1, s2);
+    if(res== 0)
+      printf("s1 ans s2 are same");
+     else if(res<0)
+       printf("s1 is smaller than s2");
+     else
+       printf("s1 is greater than s2");
+       
+     return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    int i;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Remove newline if present
+    str[strcspn(str, "\n")] = '\0';
+
+    for (i = 0; i < strlen(str); i++) {
+        printf("Index %d: %c\n", i, str[i]);
+    }
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], sub[100];
+    int start, end;
+
+    printf("Enter a string: ");
+    scanf("%[^\n]", str); // reads string with spaces
+
+    printf("Enter start index: ");
+    scanf("%d", &start);
+    printf("Enter end index: ");
+    scanf("%d", &end);
+
+    strncpy(sub, str + start, end - start + 1); // copy substring
+    sub[end - start + 1] = '\0'; // null-terminate
+
+    printf("Substring: %s\n", sub);
+
+    return 0;
+}*/
+/*
+#include<stdio.h>
+#include<ctype.h>
+
+int main()
+{
+    int j = 0;
+    char str[] = "Rishi is a good girl";
+    char ch;
+    
+    while(str[j])
+    {
+        ch = str[j];
+        putchar(toupper(ch));
+        j++;
+    }
+    return 0;
+}
+*/
+/*
+#include<stdio.h>
+#include<ctype.h>
+
+int main()
+{
+    int j = 0;
+    char str[] = "RISHIMAA IS A SUPERGIRL";
+    char ch;
+    
+    while(str[j])
+    {
+        ch = str[j];
+        putchar(tolower(ch));
+        j++;
+    }
+    return 0;
+}*/
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], substr[100];
+    char *pos;
+
+    // Input main string
+    printf("Enter the main string: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0'; // remove newline
+
+    // Input substring
+    printf("Enter the substring: ");
+    fgets(substr, sizeof(substr), stdin);
+    substr[strcspn(substr, "\n")] = '\0'; // remove newline
+
+    // Search for substring
+    pos = strstr(str, substr);
+
+    if (pos != NULL) {
+        int index = pos - str; // position in main string
+        printf("Substring found at index: %d\n", index);
+    } else {
+        printf("Substring not found.\n");
+    }
+
+    return 0;
+}*/
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[200], find[50], replace[50], result[300];
+    int i = 0, j = 0;
+    int findLen, replaceLen;
+
+    // Input original string
+    printf("Enter the main string: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+
+    // Input substring to find
+    printf("Enter the substring to replace: ");
+    fgets(find, sizeof(find), stdin);
+    find[strcspn(find, "\n")] = '\0';
+
+    // Input replacement substring
+    printf("Enter the replacement substring: ");
+    fgets(replace, sizeof(replace), stdin);
+    replace[strcspn(replace, "\n")] = '\0';
+
+    findLen = strlen(find);
+    replaceLen = strlen(replace);
+
+    while (str[i] != '\0') {
+        if (strncmp(&str[i], find, findLen) == 0) {
+            strcpy(&result[j], replace);
+            j += replaceLen;
+            i += findLen;
+        } else {
+            result[j++] = str[i++];
+        }
+    }
+    result[j] = '\0';
+
+    printf("Modified string: %s\n", result);
+
+    return 0;
+}
+*/
+
+
+
