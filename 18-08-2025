@@ -1,0 +1,15 @@
+1. Bubble Sort: Given an unsorted array of integers, write a program to sort the array in ascending order using the bubble sort algorithm.
+
+2. Selection Sort: You have a list of students test scores. Sort these scores in descending order using the Selection sort method.
+
+3. Insertion Sort: Given a list of words, arrange them in alphabetical order using the insertion sort technique.
+
+4. Merge Sort: Implement the merge sort algorithm to efficiently sort a large dataset of members in ascending order.
+
+5. Quick Sort
+
+6. Heap Sort
+
+7. Counting Sort
+
+8. Radix Sort
