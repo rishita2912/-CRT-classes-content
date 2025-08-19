@@ -40,3 +40,17 @@ int main()
 
 2. 
 
+CODE
+
+Problem 1: Custom Memory Allocator using Pointers: Implement a simplified custom memory allocator in C that manages a fixed size of memory buffer(e.g., 1KB). You need to
+implement two functions:
+void*my_malloc(size_t size);
+void my_free(void* ptr);
+
+The my malloc function should allocate memory chunks from a global buffer.
+The my free function should mark a previously allocated chunk as free.
+Use pointer arithmetic to track allocations, and maintain a simple meta data structure(e.g., linked list of blocks or bit flags) to manage used and free memory blocks.
+
+Problem 2: Implement Linked List(Create, Insert, Delete, Display): Use pointers to implement a singly linked list and perform operations like insert at beginning/end,
+delete a node, and display the list.
+
