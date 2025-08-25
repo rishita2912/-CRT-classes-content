@@ -19,6 +19,18 @@
 10. Write a recursive function to evaluate a mathematical expression stored as a string.
 
 
+Problem 1: String Subsequence with Constraints
+Write a recursive function that generates all subsequences of a given, but excludes any subsequences of a given string, but excludes any 
+subsequence that contains two consecutive identical characters.
+Example:
+Input:"aab"
+Output subsequences: "a", "b", "aa", "ab", "aab" -> but valid ones would be "a", "b", "ab"(since "aa" and "aab" contain consecutive identical 'a').
+
+Problem 2: Optimal Coin Change(Recursive DP)
+You are given a set of coin denominations and a target value. Write a recursive function to find the minimum number of coinsrequired to make the target value.
+Example:
+Input: coins = [1,3,4], target = 6
+Output:2 (because 3+3 = 6 or 4+1+1=6, min is 2 coins).
 
 CODES
 
@@ -50,5 +62,52 @@ int main()
     return 0;
 }
 
+3.
+#include<iostream>
+using namespace std;
 
-2.
+int maxelement(int arr[], int n)
+{
+    if(n == 0)
+    return 1;
+    return max(arr[n - 1], maxelement(arr, n - 1));
+}
+int main()
+{
+    int arr[] = {5,6,7,8,9,10};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    cout<<"The maximum element in the array:"<<maxelement(arr,n);
+    return 0;
+}
+
+4.
+#include<iostream>
+using namespace std;
+
+int eleSearch(int arr[], int n, int x, int i = 0)
+{
+    if(i == n)
+    return -1;// Base Condition not found
+    if(arr[i]==x) return i; // Key found
+    return eleSearch(arr, n, x, i+1);
+    
+}
+int main()
+{
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    int n = 10, x = 6;
+    int pos = eleSearch(arr,n,x);
+    if(pos!=-1)
+    {
+        cout<<"Found at index:"<<pos;
+    }
+    else
+    {
+        cout<<"Element not found"<<pos;
+    }
+    return 0;
+    
+}
+
+5.
+
