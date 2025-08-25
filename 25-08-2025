@@ -1,0 +1,54 @@
+1. Write a recursive function to count the number of digits in a number.
+
+2. Write a recursive function to print the binary equivalent of a given decimal number.
+
+3. Write a recursive function to find the maximum element in an array.
+
+4. Write a recursive function to search a element in an array.
+
+5. Write a recursive function to implement binary search in an array.
+
+6. Write a recursive function to solve the Tower of Hanoi problem.
+
+7. Write a recursive function to generae all subsets of a given set.
+
+8. Write a recursive function to calculate Ackerman function.
+
+9. Write a recurive function to find the number of paths in an m*n matrix(moving only right and down).
+
+10. Write a recursive function to evaluate a mathematical expression stored as a string.
+
+
+
+CODES
+
+1. 
+#include <iostream>
+using namespace std;
+
+int countDigits(int n)
+{
+    if (n == 0)
+    return 0;
+    return 1 +countDigits(n/10);
+}
+
+int main()
+{
+   int num;
+   cout<<"Enter a number:";
+   cin>>num;
+   if(num == 0)
+   {
+       cout<<"The number of digits are:1"<<endl;
+   }
+   else
+   {
+   cout<<"The number of digits in a number are:"<<countDigits(num);
+   }
+
+    return 0;
+}
+
+
+2.
