@@ -1,0 +1,20 @@
+Abstract Data Types(ADT)
+
+1. Stack Implementation: Implement a stack ADT using arrays. Perform the operations push,pop, and peek. Write a program to check whether a given string is a palindrome using the stack.
+
+2. Queue Operations: Design a queue ADT using arrays. Implement the operations enqueue, dequeue, and display. Test the program with customer requests arriving at a service desk.
+
+3. List ADT: Create a List ADT that supports inserts insert, delete, search, and display operations. Demonstrate with n array-based implementation to manage student roll numbers.
+
+4. Set ADT: Write a program to implement a set ADT using arrays. Include operations such as union, intersection, and difference. Demonstrate with two sets of integers.
+
+Array Operations
+
+5. Array Traversal: Write a program to inverse an array and print all the elements in forward and reverse order.
+
+6. Insertion in Array: Given an array of integers, write a program to insert a new element at a specific position. Ensure the array element at a specific position. Ensure the array elements
+ are shifted properly.
+
+7. Deletion in Array: Write a pogram to delete an element from a given position in an array before and after deletion.
+
+8. Searching in Array: Implemenr both linear search and binary search algorithms.
