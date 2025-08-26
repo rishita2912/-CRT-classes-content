@@ -18,3 +18,16 @@ Array Operations
 7. Deletion in Array: Write a pogram to delete an element from a given position in an array before and after deletion.
 
 8. Searching in Array: Implemenr both linear search and binary search algorithms.
+
+
+PROBLEM 1: Reverse a singly linked list
+Write a program to reverse a singly linked list. The program should take the head of the linked list as input and return the new head of the reversed list.
+Example:
+Input: 1->3->2->3->4->NULL
+Output: 4->3->2->1_>NULL
+
+PROBLEM 2: Detect a cycle in a linked list
+Write a program to check whether a given singly linked list contains a cycle. A cycle exists if a node's next pointer points back to a previous node in the list.
+Example:
+Input:1->2->3->3->4->2(back to node 2)
+Output: Cycle detected
