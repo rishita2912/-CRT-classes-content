@@ -1,0 +1,19 @@
+1.Prime Gap Finder: Given a range [L,R], you need to find all prime numbers in that range and determine the maximum difference between two consecutive 
+primes. This problem tests your ability to use prime sieving and work with ranges efficiently
+
+2.Modular Inverse(Using Extended Euclidean Algorithm): You are to find an integer x such that (a*x) % m == 1. This only exist
+
+4. Carmichael Number Check: Carmicheal numbers are composite numbers that behaves like primes in Fermat's little Theorem. You are to check if a number n 
+satisfies: a^(n-1)%n == 1 for all a coprime to n.
+
+5. Nth Prime Number: Given a nuber n, find the n-th prime number(e.g, the 10th prime is 29).Efficient implementation requires using the Sieve of Eratosthenes or a smart prime-checking loop.
+
+6. Find all the divisors of a number: You need to print all the numbers that divide n exactly. An efficient way is to loop from 1 to underroot of n and store both divisors in each step.
+
+7. GCD of array elements: GIven an array, compute the greatest common divisor of all its elements.
+
+8. Sum of GCDs of all Unique Pairs: For every unique pair (i,j) in an array, compute GCD(arr[i],arr[j]) and return the total sum. It's a good problem for nested loops and practising GCD logic.
+
+9. Fast Modular Exponentation: You need to compute (a^b) % m for large a and b, which would otherwise overflow. Use binary exponentiation to do it in O(log b) time efficiently.
+
+10. Prime Power in Fctorial: Given n and a prime p, find the exponent of p in the prime factorization of n! using: count = n/p+n/p^2+n/p^3+...
